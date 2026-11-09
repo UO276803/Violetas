@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f7f2ed">
+  <meta name="description" content="Una pequeña floristería virtual dedicada a las violetas.">
+  <title>Violeta — Una floristería especial</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page-shell">
+    <header class="topbar">
+      <a class="brand" href="#" aria-label="Violeta, inicio">
+        <span class="brand-mark">v.</span>
+        <span>violeta<span class="brand-dot">.</span></span>
+      </a>
+      <span class="top-note"><span class="tiny-flower">✿</span> FLORISTERÍA DE HOY</span>
+    </header>
+
+    <main>
+      <section class="screen screen-welcome active" id="welcome">
+        <div class="welcome-copy">
+          <p class="eyebrow"><span></span> 9 DE NOVIEMBRE · DÍA DE LAS VIOLETAS</p>
+          <h1>Un día bonito<br>merece <em>flores.</em></h1>
+          <p class="intro">Hemos preparado algo especial. Entra, ponte cómoda y descubre lo que tenemos para ti.</p>
+          <button class="primary-btn" id="startBtn">Descubrir mi ramo <span>↗</span></button>
+          <p class="microcopy">Una pequeña sorpresa hecha con cariño.</p>
+        </div>
+        <div class="hero-art" aria-label="Ilustración de un ramo de violetas">
+          <div class="sun-wash"></div>
+          <div class="hero-stamp">FLORES<br>FRESCAS<br><b>✳</b></div>
+          <div class="hero-bouquet">
+            <svg viewBox="0 0 460 500" role="img" aria-label="Ramo ilustrado de violetas">
+              <defs>
+                <linearGradient id="paper" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0" stop-color="#e9d9c6"/><stop offset="1" stop-color="#cdb59e"/>
+                </linearGradient>
+                <linearGradient id="petal" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0" stop-color="#b99acb"/><stop offset="1" stop-color="#72518e"/>
+                </linearGradient>
+              </defs>
+              <g class="leaves" fill="#71866c">
+                <path d="M226 344 C132 255 102 188 130 155 C190 179 219 257 226 344Z"/>
+                <path d="M235 340 C270 231 327 180 361 196 C352 262 296 320 235 340Z"/>
+                <path d="M215 365 C124 321 78 279 92 249 C151 252 199 304 215 365Z"/>
+                <path d="M250 355 C282 292 339 270 363 292 C341 337 291 361 250 355Z"/>
+                <path d="M230 350 C190 240 194 163 224 142 C262 193 253 284 230 350Z"/>
+              </g>
+              <g fill="none" stroke="#526d54" stroke-width="5" stroke-linecap="round">
+                <path d="M220 385 Q172 250 128 145"/><path d="M230 390 Q260 250 353 184"/>
+                <path d="M235 390 Q215 230 220 128"/><path d="M238 390 Q286 290 370 275"/>
+                <path d="M220 390 Q150 300 82 247"/>
+              </g>
+              <g class="flower f1" transform="translate(128 135)">
+                <ellipse cx="0" cy="-19" rx="13" ry="22" fill="url(#petal)"/><ellipse cx="18" cy="-5" rx="13" ry="22" transform="rotate(72 18 -5)" fill="#9575b0"/><ellipse cx="11" cy="17" rx="13" ry="22" transform="rotate(144 11 17)" fill="#80619c"/><ellipse cx="-11" cy="17" rx="13" ry="22" transform="rotate(216 -11 17)" fill="#a487ba"/><ellipse cx="-18" cy="-5" rx="13" ry="22" transform="rotate(288 -18 -5)" fill="#8d6ba8"/><circle r="6" fill="#e7c77c"/>
+              </g>
+              <g class="flower f2" transform="translate(220 120) scale(1.12)">
+                <ellipse cx="0" cy="-19" rx="13" ry="22" fill="#a88abd"/><ellipse cx="18" cy="-5" rx="13" ry="22" transform="rotate(72 18 -5)" fill="#795992"/><ellipse cx="11" cy="17" rx="13" ry="22" transform="rotate(144 11 17)" fill="#9474ad"/><ellipse cx="-11" cy="17" rx="13" ry="22" transform="rotate(216 -11 17)" fill="#b39ac8"/><ellipse cx="-18" cy="-5" rx="13" ry="22" transform="rotate(288 -18 -5)" fill="#80609a"/><circle r="6" fill="#e7c77c"/>
+              </g>
+              <g class="flower f3" transform="translate(352 177) scale(.92)">
+                <ellipse cx="0" cy="-19" rx="13" ry="22" fill="#9c7bb5"/><ellipse cx="18" cy="-5" rx="13" ry="22" transform="rotate(72 18 -5)" fill="#76538f"/><ellipse cx="11" cy="17" rx="13" ry="22" transform="rotate(144 11 17)" fill="#a78abe"/><ellipse cx="-11" cy="17" rx="13" ry="22" transform="rotate(216 -11 17)" fill="#85649f"/><ellipse cx="-18" cy="-5" rx="13" ry="22" transform="rotate(288 -18 -5)" fill="#b59ac8"/><circle r="6" fill="#e7c77c"/>
+              </g>
+              <g class="flower f4" transform="translate(82 239) scale(.78)">
+                <ellipse cx="0" cy="-19" rx="13" ry="22" fill="#b39ac8"/><ellipse cx="18" cy="-5" rx="13" ry="22" transform="rotate(72 18 -5)" fill="#80609a"/><ellipse cx="11" cy="17" rx="13" ry="22" transform="rotate(144 11 17)" fill="#9879b1"/><ellipse cx="-11" cy="17" rx="13" ry="22" transform="rotate(216 -11 17)" fill="#76548f"/><ellipse cx="-18" cy="-5" rx="13" ry="22" transform="rotate(288 -18 -5)" fill="#a78abe"/><circle r="6" fill="#e7c77c"/>
+              </g>
+              <g class="flower f5" transform="translate(370 274) scale(.72)">
+                <ellipse cx="0" cy="-19" rx="13" ry="22" fill="#a88abd"/><ellipse cx="18" cy="-5" rx="13" ry="22" transform="rotate(72 18 -5)" fill="#795992"/><ellipse cx="11" cy="17" rx="13" ry="22" transform="rotate(144 11 17)" fill="#9474ad"/><ellipse cx="-11" cy="17" rx="13" ry="22" transform="rotate(216 -11 17)" fill="#b39ac8"/><ellipse cx="-18" cy="-5" rx="13" ry="22" transform="rotate(288 -18 -5)" fill="#80609a"/><circle r="6" fill="#e7c77c"/>
+              </g>
+              <path d="M125 300 L330 300 L290 465 Q225 493 164 465Z" fill="url(#paper)" stroke="#c4ad96" stroke-width="2"/>
+              <path d="M125 300 Q228 350 330 300 L290 465 Q225 493 164 465Z" fill="#e3d0ba" opacity=".7"/>
+              <path d="M226 360 Q195 399 190 458 M226 360 Q251 400 266 465" fill="none" stroke="#c4ad96" stroke-width="2"/>
+              <path d="M205 377 Q230 397 250 376 Q264 400 240 412 Q219 421 205 400 Q188 417 174 399 Q185 379 205 377Z" fill="#8b659c"/>
+              <path d="M226 388 L226 414" stroke="#72518e" stroke-width="3"/>
+            </svg>
+          </div>
+          <span class="art-caption">un ramo para alegrar el día</span>
+        </div>
+      </section>
+
+      <section class="screen builder-screen" id="builder">
+        <div class="section-heading">
+          <p class="eyebrow"><span></span> TU ENCARGO ESPECIAL</p>
+          <h2>Vamos a preparar<br><em>un ramo precioso.</em></h2>
+          <p>Unos pequeños detalles y estará listo.</p>
+        </div>
+        <div class="builder-layout">
+          <div class="builder-preview">
+            <div class="preview-label"><span>VISTA PREVIA</span><span class="live-dot">● EN PREPARACIÓN</span></div>
+            <div class="mini-bouquet" id="miniBouquet">
+              <div class="mini-flower flower-a">✿</div><div class="mini-flower flower-b">✿</div>
+              <div class="mini-flower flower-c">✿</div><div class="mini-flower flower-d">✿</div>
+              <div class="mini-flower flower-e">✿</div><div class="mini-flower flower-f">✿</div>
+              <div class="mini-leaf leaf-a"></div><div class="mini-leaf leaf-b"></div>
+              <div class="wrap-paper"></div><div class="wrap-ribbon"></div>
+            </div>
+            <p class="preview-caption">Violetas recién preparadas, con mucho mimo.</p>
+          </div>
+          <div class="options-panel">
+            <div class="step-count">PASO <b id="stepNumber">01</b> <span>/ 02</span></div>
+            <div class="option-group" id="flowerOptions">
+              <h3>¿Cuántas violetas ponemos?</h3>
+              <p>Un ramo nunca tiene demasiadas flores.</p>
+              <div class="choice-grid">
+                <button class="choice selected" data-count="5"><span class="choice-flowers">✿ ✿ ✿</span><b>Un detalle</b><small>5 violetas</small></button>
+                <button class="choice" data-count="7"><span class="choice-flowers">✿ ✿ ✿ ✿</span><b>Un buen ramo</b><small>7 violetas</small></button>
+                <button class="choice" data-count="9"><span class="choice-flowers">✿ ✿ ✿ ✿ ✿</span><b>¡A lo grande!</b><small>9 violetas</small></button>
+              </div>
+              <button class="primary-btn next-btn" id="nextBtn">Siguiente <span>→</span></button>
+            </div>
+            <div class="option-group hidden" id="paperOptions">
+              <h3>Elige cómo lo envolvemos</h3>
+              <p>El último toque antes de entregarlo.</p>
+              <div class="wrap-choices">
+                <button class="wrap-choice selected" data-wrap="natural"><span class="paper-swatch natural"></span><b>Natural</b><small>Papel kraft</small></button>
+                <button class="wrap-choice" data-wrap="lilac"><span class="paper-swatch lilac"></span><b>Lavanda</b><small>Un toque lila</small></button>
+                <button class="wrap-choice" data-wrap="cream"><span class="paper-swatch cream"></span><b>Clásico</b><small>Color crema</small></button>
+              </div>
+              <div class="button-row">
+                <button class="text-btn" id="backBtn">← Atrás</button>
+                <button class="primary-btn" id="finishBtn">Terminar ramo <span>✦</span></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="screen final-screen" id="final">
+        <div class="final-content">
+          <p class="eyebrow"><span></span> PEDIDO COMPLETADO</p>
+          <div class="final-bouquet-wrap">
+            <div class="final-bouquet" id="finalBouquet">
+              <div class="final-stem stem-1"></div><div class="final-stem stem-2"></div><div class="final-stem stem-3"></div>
+              <div class="final-leaf fl-1"></div><div class="final-leaf fl-2"></div><div class="final-leaf fl-3"></div>
+              <div class="big-flower bf-1">✿</div><div class="big-flower bf-2">✿</div><div class="big-flower bf-3">✿</div>
+              <div class="big-flower bf-4">✿</div><div class="big-flower bf-5">✿</div><div class="big-flower bf-6">✿</div>
+              <div class="big-flower bf-7">✿</div><div class="big-flower bf-8">✿</div><div class="big-flower bf-9">✿</div>
+              <div class="final-paper"></div><div class="final-bow"></div>
+            </div>
+          </div>
+          <h2>¡Tu ramo está <em>listo!</em></h2>
+          <p class="final-message">Unas violetas para alegrarte el día.<br>¡Feliz día de las violetas! 💜</p>
+          <div class="ticket">
+            <div><span>FLORISTERÍA VIOLETA</span><b>Un ramo preparado especialmente para ti.</b></div>
+            <span class="ticket-flower">✿</span>
+          </div>
+          <p class="signature">Con cariño, desde Asturias.</p>
+          <button class="text-btn restart-btn" id="restartBtn">↻ Volver a preparar el ramo</button>
+        </div>
+        <div class="confetti" id="confetti" aria-hidden="true"></div>
+      </section>
+    </main>
+    <footer><span>VIOLETA © 2026</span><span>HECHO PARA ALEGRAR EL DÍA <b>✿</b></span></footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
